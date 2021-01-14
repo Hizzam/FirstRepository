@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name:FirstRepository
+name:First_Repository
 
 # Controls when the action will run. 
 on:
@@ -27,7 +27,7 @@ jobs:
       - name: Installing Node
         uses: actions/setup-node@v2-beta
         with:
-           node-version: 14
+           node-version: 13
 
       # Runs a set of commands using the runners shell
       - name: Installing surge
@@ -36,5 +36,3 @@ jobs:
         run: surge ./first_repository.surge.sh --token ${{ secrets.SURGE_TOKEN }}
         
         
-          echo Add other actions to build,
-          echo test, and deploy your project.
